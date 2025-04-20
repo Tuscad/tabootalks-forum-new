@@ -1,12 +1,21 @@
 {
+<<<<<<< HEAD
   "name": "taboo-talks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+=======
+  "name": "taboo-talks-forum",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+>>>>>>> 2e6a0de687a3745656eda9f7b6179520971d86ef
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.126",
     "@types/react": "^19.1.2",
@@ -15,6 +24,15 @@
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
+=======
+    "core-js-pure": "^3.41.0",
+    "react": "^18.2.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.1",
+    "tailwind": "^2.4.1",
+    "tailwindcss": "^3.3.3",
+    "vite": "^6.3.2",
+>>>>>>> 2e6a0de687a3745656eda9f7b6179520971d86ef
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,5 +58,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   }
+=======
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2"
+  },
+  "description": "A forum platform for discussing taboo topics, built with React and Tailwind CSS.",
+  "main": "index.js",
+  "keywords": ["forum", "discussion", "react", "tailwindcss", "firebase"],
+  "author": "Your Name or Organization",
+  "license": "ISC",
+  "type": "module"
+>>>>>>> 2e6a0de687a3745656eda9f7b6179520971d86ef
 }
