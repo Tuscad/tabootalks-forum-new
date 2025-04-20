@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - '@firebase/util'
+  - core-js
+  - core-js-pure
+  - esbuild
+  - node
+  - protobufjs
