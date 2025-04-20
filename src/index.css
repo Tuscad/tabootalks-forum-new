@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.theme-neutral {
+  background-color: theme('colors.skin.neutral');
+  color: theme('colors.text.light');
+}
+
+body.theme-blue {
+  background-color: theme('colors.skin.blue');
+  color: theme('colors.text.light');
+}
+
+body.theme-green {
+  background-color: theme('colors.skin.green');
+  color: theme('colors.text.light');
+}
+
+body.theme-safe {
+  background-color: theme('colors.skin.safe');
+  color: theme('colors.text.light');
+  filter: grayscale(0.8) brightness(0.9);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
