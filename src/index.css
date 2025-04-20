@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,7 +25,7 @@ body.theme-safe {
 
 body {
   font-family: system-ui, sans-serif;
-=======
+  
 @import "tailwindcss";
 body {
   margin: 0;
@@ -40,5 +39,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
->>>>>>> 2e6a0de687a3745656eda9f7b6179520971d86ef
 }
