@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# TabooTalks Forum
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Nowoczesne forum społecznościowe oparte na React, TypeScript, Tailwind, Firebase.
 
-## Available Scripts
+## 🚀 Stack
 
-In the project directory, you can run:
+- **React 18 + TypeScript**
+- **Tailwind CSS** (z obsługą motywów, tryb „bezpieczny”)
+- **Firebase** (Auth + Firestore)
+- **React Router DOM**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Instalacja lokalna
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/Tuscad/tabootalks-forum-new.git
+cd tabootalks-forum-new
+npm install
+npm run dev
+```
 
-### `npm test`
+> Upewnij się, że masz skonfigurowane dane Firebase w `main.tsx`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔐 Konfiguracja Firebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Stwórz projekt na [Firebase Console](https://console.firebase.google.com/)
+2. Skopiuj dane z `project settings > Web App` i uzupełnij:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```ts
+const firebaseConfig = {
+  apiKey: '...',
+  authDomain: '...',
+  projectId: '...',
+  storageBucket: '...',
+  messagingSenderId: '...',
+  appId: '...',
+};
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Upewnij się, że masz włączone:
+- Firebase Auth (email/password)
+- Firestore Database
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🌐 Deploy na Vercel
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Wejdź na [vercel.com](https://vercel.com/)
+2. Import repo z GitHub
+3. Ustaw zmienne środowiskowe:
+   - `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`, itd.
+4. Gotowe 🚀
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Foldery
 
-## Learn More
+```
+src/
+├── components/     # Layout, MoodPopup
+├── hooks/          # useAuth
+├── theme/          # ThemeContext
+├── pages/          # Forum, Blog, Profile, Admin
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ✅ Funkcje
 
-### Code Splitting
+- Motywy kolorystyczne (ciemny, zielony, niebieski, bezpieczny)
+- Dziennik nastroju (popup z zapisem do Firestore)
+- Przełącznik motywu w navbarze
+- Obsługa Firebase Auth (logowanie/rejestracja)
+- Routing: forum, blog, profil, panel admina
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🧩 W planach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Blogi i serie tematyczne
+- Tryb zen, tryb offline
+- Zamazywanie triggerujących słów
+- Wsparcie mentorów i punktów empatii
+- Forumowe bingo emocji 🎲
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Z miłością do wspólnoty 💙
